@@ -30,23 +30,35 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse flex-grow-0" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                    </ul>
+                <div class="d-flex">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse d-block" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown link
+                                </a>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -54,6 +66,7 @@
 
     </header>
 
+    <!--MAIN-->
 
     <main>
         <!--SIDEBAR-->
@@ -73,6 +86,67 @@
                 </div>
             </div>
         </section>
+
+        <!--TOP-CONTAINER-->
+
+        <section id="top-container" class="container-fluid w-100">
+            <div class="container w-100">
+                <div class="row w-100 justify-content-between">
+                    
+                    <div class="col-12 col-md-4">
+                        <div>nuovo studente</div>
+                        <div>+</div>
+                    </div>
+                   
+                    <div class="col-12 col-md-4">
+                        <div>studenti</div>
+                        <div>30min</div>
+                        <div>125</div>
+                    </div>
+                   
+                    <div class="col-12 col-md-4">
+                        <div>
+                            <h2>boolean</h2>
+                            <button>piano blaze</button>
+                        </div>
+                        <button>3 app</button>
+                        <div class="collapse" id="navbarToggleExternalContent">
+                            <div class="bg-light p-4">
+                                <button class="text-white h4">Collapsed content</button>
+                                <button class="text-white h4">Collapsed content</button>
+                                <button class="text-muted">Toggleable via the navbar brand.</button>
+                            </div>
+                        </div>
+                        <nav class="bg-light">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarToggleExternalContent"
+                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    >>
+                                </button>
+                                <!--<i class="fa-solid fa-plus"></i>-->
+
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
     <!--JAVA-->
 
