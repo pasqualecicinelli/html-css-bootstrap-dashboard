@@ -1,0 +1,21 @@
+#header{
+    min-height: 80px;
+
+}
+
+#sidebar{
+    max-width: 50px;
+    height: 100vh;
+}
+
+
+
+
+
+
+.debug{
+    border: 2px solid black;
+}
+.debug-col{
+    border: 2px solid red;
+}
