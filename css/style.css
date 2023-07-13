@@ -9,6 +9,8 @@ body {
     --bg-bell: gold;
     --bg-sidebar:#142A40;
     --bg-trasparent:rgba(0,0,0,0.0);
+    --bg-header:#1B72E8;
+    --bg-botton:#165BBA;
 }
 
 /*--NAVBAR--*/
@@ -73,25 +75,43 @@ nav .fa-question{
     border: 0;
 }
 
+/*--HEADER--*/
+
 .bg-container {
     width: calc(100% - 50px);
+    
 }
 
+#top-container{
+    background-color: var(--bg-header);
+}
+
+#top-container nav{
+    width: 20%;
+}
+
+#top-container .order-md-3:first-child button {
+    height: 36px;
+    margin: 0.5rem;
+}
+
+#top-container .btn-primary{
+    background-color: var(--bg-botton);
+}
 .offcanvas {
     --bs-offcanvas-width: 100%;
 }
-
-
-
-.debug {
-    border: 2px solid black;
+#basic-addon1{
+    border: 0;
+    background-color: var(--bg-trasparent);
 }
 
-.debug-col {
-    border: 2px solid red;
-}
+/*--font-awesome*/
 
+/*<i class="fa-solid fa-pen"></i>
+<i class="fa-solid fa-trash"></i>
 
+*/
 
 
 /*--MEDIA QUERY--*/

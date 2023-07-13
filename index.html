@@ -24,9 +24,9 @@
         <div class="container-fluid">
             <div class="box">
                 <img class="sm-logo pe-3" src="./img/mobile-logo.png" alt="Bootstrap" width="60px">
-               
-                <svg class="md-logo d-none pe-3" width="133" height="28" viewBox="0 0 133 28" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="navbar-content-logo-desktop">
+
+                <svg class="md-logo d-none pe-3" width="133" height="28" viewBox="0 0 133 28" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" class="navbar-content-logo-desktop">
                     <g clip-path="url(#clip0_1868_2965)">
                         <path
                             d="M12.9866 21.7381L11.0646 23.5888C10.8516 23.7932 10.5631 23.9079 10.2623 23.9079C9.96153 23.9079 9.67302 23.7932 9.46004 23.5888L0.331474 14.8056C0.119177 14.6003 0 14.3225 0 14.0329C0 13.7434 0.119177 13.4656 0.331474 13.2603L9.52731 4.41233C9.74078 4.20828 10.0295 4.09375 10.3304 4.09375C10.6313 4.09375 10.92 4.20828 11.1335 4.41233L13.0588 6.26306C13.2707 6.4679 13.3897 6.74513 13.3897 7.03412C13.3897 7.32312 13.2707 7.60036 13.0588 7.80519L12.8332 8.01986L7.39283 13.2548C7.18043 13.4597 7.06115 13.7372 7.06115 14.0266C7.06115 14.316 7.18043 14.5936 7.39283 14.7985L12.9866 20.1952C13.0924 20.2962 13.1764 20.4164 13.2338 20.5488C13.2911 20.6812 13.3206 20.8232 13.3206 20.9666C13.3206 21.1101 13.2911 21.2521 13.2338 21.3845C13.1764 21.5169 13.0924 21.6371 12.9866 21.7381Z"
@@ -99,9 +99,9 @@
                                     <i class="fa-solid fa-bell"></i>
                                 </a>
                                 <ul class="dropdown-menu ">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -114,7 +114,7 @@
 
     <!--MAIN-->
 
-    <main class="d-flex debug">
+    <main class="d-flex">
 
         <!--SIDEBAR-->
 
@@ -124,11 +124,15 @@
                     <div class="row h-100 flex-column">
                         <div class="col h-100">
                             <div class="h-100 list-group text-center">
-                                <a class="list-group-item" href="#"><i class="fa-solid fa-house"></i> <span class="ps-2 d-none d-lg-inline-block">Home</span></a>
-                                <a class="list-group-item" href="#"><i class="fa-solid fa-chart-simple"></i> <span class="ps-3 d-none d-lg-inline-block">Stats</span></a>
-                                <a class="list-group-item" href="#"><i class="fa-solid fa-signal"></i> <span class="ps-2 d-none d-lg-inline-block">Signals</span></a>
+                                <a class="list-group-item" href="#"><i class="fa-solid fa-house"></i> <span
+                                        class="ps-2 d-none d-lg-inline-block">Home</span></a>
+                                <a class="list-group-item" href="#"><i class="fa-solid fa-chart-simple"></i> <span
+                                        class="ps-3 d-none d-lg-inline-block">Stats</span></a>
+                                <a class="list-group-item" href="#"><i class="fa-solid fa-signal"></i> <span
+                                        class="ps-2 d-none d-lg-inline-block">Signals</span></a>
 
-                                <a class="list-group-item mt-auto" href="#"><i class="fa-solid fa-gear"></i> <span class="ps-2 d-none d-lg-inline-block">Admin</span></a>
+                                <a class="list-group-item mt-auto" href="#"><i class="fa-solid fa-gear"></i> <span
+                                        class="ps-2 d-none d-lg-inline-block">Admin</span></a>
                             </div>
                         </div>
                     </div>
@@ -139,36 +143,36 @@
         <!--HEADER-->
 
         <div class="d-flex flex-column bg-container">
-            <header id="top-container" class="debug">
+            <header id="top-container">
                 <div class="container-fluid">
                     <div class="row justify-content-between">
 
-                        <div class="col-12 col-md-4 order-md-3 d-flex debug-col ">
-                            <h6>nuovo studente</h6>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        <div class="col-12 col-md-4 order-md-3 d-flex">
+                            <button class="student btn text-white">Nuovo studente</button>
+                            <button class="student btn text-white" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
                                     class="fa-solid fa-plus"></i></button>
                         </div>
 
 
 
-                        <div class="col-12 col-md-4 order-md-1 debug-col">
-                            <div>
-                                <h2>boolean</h2>
-                                <button>piano blaze</button>
+                        <div class="col-12 col-md-4 order-md-1">
+                            <div class="d-flex">
+                                <h2 class="text-white m-2">Boolean</h2>
+                                <button class="btn btn-primary m-2">Piano blaze</button>
                             </div>
-                            <button>3 app</button>
+                            <button class="btn btn-primary m-2">3 app</button>
                             <div class="collapse" id="navbarToggleExternalContent">
-                                <div class="bg-light p-4">
-                                    <button class="text-white h4">Collapsed content</button>
-                                    <button class="text-white h4">Collapsed content</button>
-                                    <button class="text-muted">Toggleable via the navbar brand.</button>
+                                <div class="d-flex align-items-center p-4">
+                                    <button class="btn btn-primary h4 m-2">Boolean mobile app</button>
+                                    <button class="btn btn-primary h4 m-2">Boolean web app</button>
+                                    <button class="btn btn-primary h4 m-2">Boolean blog app</button>
                                 </div>
                             </div>
-                            <nav class="bg-light">
+                            <nav>
                                 <div class="container-fluid">
-                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#navbarToggleExternalContent"
+                                    <button class="btn text-white" class="navbar-toggler" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent"
                                         aria-controls="navbarToggleExternalContent" aria-expanded="false"
                                         aria-label="Toggle navigation">
                                         >>
@@ -178,10 +182,9 @@
                                 </div>
                             </nav>
                         </div>
-                        <div class="col-12 col-md-4 order-md-2 debug-col">
-                            <div>studenti</div>
-                            <div>30min</div>
-                            <div>125</div>
+                        <div class="col-12 col-md-4 order-md-2">
+                            <h6 class="text-white m-2">Studenti online negli ultimi 30 minuti</h6>
+                            <h4 class="text-white m-2">125</h4>
                         </div>
                     </div>
                 </div>
@@ -189,16 +192,16 @@
 
             <!--MIDDLE-CONTAINER-->
 
-            <section id="middle-container" class="debug">
+            <section id="middle-container">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-lg-8 debug-col">
+                        <div class="col-12 col-lg-8">
                             <div class="card">
-                                <h3>title</h3>
+                                <h3>Prossime classi</h3>
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col">#</th>
+                                            <th scope="col">nome</th>
                                             <th scope="col">First</th>
                                             <th scope="col">Last</th>
                                             <th scope="col">Handle</th>
@@ -225,6 +228,7 @@
                                     </tbody>
                                 </table>
                             </div>
+
                             <div class="card">
                                 <h3>title</h3>
                                 <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -277,23 +281,41 @@
                                                 least at first glance, a bit more representative of how this would look
                                                 in a real-world application.</div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4 debug-col">
+                        <div class="col-12 col-lg-4">
                             <div class="card">
                                 <h3>title</h3>
-                                <div> check box</div>
-                                <div>check box</div>
-                                <div> check box</div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Default checkbox
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Checked checkbox
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Checked checkbox
+                                    </label>
+                                </div>
                             </div>
                             <div class="card">
                                 <img src="./img/stats.jpeg" alt="">
                             </div>
                         </div>
                     </div>
-                </div>
+
             </section>
         </div>
 
@@ -301,12 +323,64 @@
 
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            ...
+            <div class="col-12 d-flex flex-wrap">
+                <div class="input-group-text w-50" id="basic-addon1">Name</div>
+                <div class="input-group-text w-50" id="basic-addon1">Cognome</div>
+            </div>
+
+            <div class="col-12 d-flex flex-wrap">
+                <div class="input-group mb-3">
+
+                    <input class="w-50" type="text" class="form-control w-50" aria-label="Name"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+
+                    <input class="w-50" type="text" class="form-control" aria-label="Cognome"
+                        aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="col-12 d-flex flex-wrap">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+                </div>
+            </div>
+            <label for="basic-url" class="form-label">Your vanity URL</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text">.00</span>
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text">With textarea</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
         </div>
     </div>
 
