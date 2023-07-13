@@ -17,19 +17,21 @@
 
 <body>
 
-    <!--HEADER-->
+    <!--NAVBAR-->
 
-    <header id="header">
 
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
 
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <div class="box">
                 <img src="./img/mobile-logo.png" alt="Bootstrap" width="50px">
-
+            </div>
+            <div class="box flex-grow-1">
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+            </div>
+            <div class="box">
                 <div class="d-flex">
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
@@ -61,80 +63,199 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-        </nav>
+    </nav>
 
-    </header>
+
 
     <!--MAIN-->
 
-    <main>
+    <main class="d-flex debug">
+
         <!--SIDEBAR-->
 
-        <section id="sidebar" class="h-100">
-            <div class="container h-100 debug">
-                <div class="row h-100 flex-column">
-                    <div class="col h-100 debug-col">
-                        <div class="h-100 list-group">
-                            <a class="list-group-item" href="#">simbolo <span>home</span></a>
-                            <a class="list-group-item" href="#">simbolo <span>home</span></a>
-                            <a class="list-group-item" href="#">simbolo <span>home</span></a>
+        <div class="side-content">
+            <section id="sidebar" class="h-100">
+                <div class="container h-100">
+                    <div class="row h-100 flex-column">
+                        <div class="col h-100">
+                            <div class="h-100 list-group">
+                                <a class="list-group-item" href="#">simbolo <span>home</span></a>
+                                <a class="list-group-item" href="#">simbolo <span>home</span></a>
+                                <a class="list-group-item" href="#">simbolo <span>home</span></a>
 
-                            <a class="list-group-item mt-auto" href="#">simbolo <span>home</span></a>
+                                <a class="list-group-item mt-auto" href="#">simbolo <span>home</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <!--TOP-CONTAINER-->
 
-        <section id="top-container" class="container-fluid w-100">
-            <div class="container w-100">
-                <div class="row w-100 justify-content-between">
-                    
-                    <div class="col-12 col-md-4">
-                        <div>nuovo studente</div>
-                        <div>+</div>
-                    </div>
-                   
-                    <div class="col-12 col-md-4">
-                        <div>studenti</div>
-                        <div>30min</div>
-                        <div>125</div>
-                    </div>
-                   
-                    <div class="col-12 col-md-4">
-                        <div>
-                            <h2>boolean</h2>
-                            <button>piano blaze</button>
+
+        <div class="d-flex flex-column">
+
+            <!--HEADER-->
+
+            <header id="top-container" class="debug">
+                <div class="container-fluid">
+                    <div class="row justify-content-between">
+
+                        <div class="col-12 col-md-4 debug-col">
+                            <div>nuovo studente</div>
+                            <div>+</div>
                         </div>
-                        <button>3 app</button>
-                        <div class="collapse" id="navbarToggleExternalContent">
-                            <div class="bg-light p-4">
-                                <button class="text-white h4">Collapsed content</button>
-                                <button class="text-white h4">Collapsed content</button>
-                                <button class="text-muted">Toggleable via the navbar brand.</button>
-                            </div>
-                        </div>
-                        <nav class="bg-light">
-                            <div class="container-fluid">
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarToggleExternalContent"
-                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    >>
-                                </button>
-                                <!--<i class="fa-solid fa-plus"></i>-->
 
+                        <div class="col-12 col-md-4 debug-col">
+                            <div>studenti</div>
+                            <div>30min</div>
+                            <div>125</div>
+                        </div>
+
+                        <div class="col-12 col-md-4 debug-col">
+                            <div>
+                                <h2>boolean</h2>
+                                <button>piano blaze</button>
                             </div>
-                        </nav>
+                            <button>3 app</button>
+                            <div class="collapse" id="navbarToggleExternalContent">
+                                <div class="bg-light p-4">
+                                    <button class="text-white h4">Collapsed content</button>
+                                    <button class="text-white h4">Collapsed content</button>
+                                    <button class="text-muted">Toggleable via the navbar brand.</button>
+                                </div>
+                            </div>
+                            <nav class="bg-light">
+                                <div class="container-fluid">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarToggleExternalContent"
+                                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        >>
+                                    </button>
+                                    <!--<i class="fa-solid fa-plus"></i>-->
+
+                                </div>
+                            </nav>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </header>
+
+            <!--MIDDLE-CONTAINER-->
+
+            <section id="middle-container" class="debug">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 debug-col">
+                            <div class="card">
+                                <h3>title</h3>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="card">
+                                <h3>title</h3>
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                Accordion Item #1
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the first item's accordion body.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                Accordion Item #2
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the second item's accordion body. Let's imagine this being filled with
+                                                some actual content.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                                Accordion Item #3
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingThree"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the third item's accordion body. Nothing more exciting happening here in
+                                                terms of content, but just filling up the space to make it look, at
+                                                least at first glance, a bit more representative of how this would look
+                                                in a real-world application.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 debug-col">
+                            <div class="card">
+                                <h3>title</h3>
+                                <div> check box</div>
+                                <div>check box</div>
+                                <div> check box</div>
+                            </div>
+                            <div class="card">
+                                <img src="./img/stats.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
-        </section>
+
+
+            </section>
 
 
 
@@ -145,8 +266,7 @@
 
 
 
-
-
+        </div>
     </main>
     <!--JAVA-->
 
