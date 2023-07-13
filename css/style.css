@@ -7,10 +7,13 @@ body {
 :root {
     --bg-search: #E5E5E5;
     --bg-bell: gold;
-
+    --bg-sidebar:#142A40;
+    --bg-trasparent:rgba(0,0,0,0.0);
 }
 
 /*--NAVBAR--*/
+
+
 nav .box button,
 nav .form-control {
     background-color: var(--bg-search);
@@ -55,11 +58,19 @@ nav .fa-question{
     background-color: darkslategray;
 }
 
-
+/*--SIDEBAR--*/
 
 .side-content {
     width: 50px;
     overflow-y: auto;
+    background-image: url('../img/sidebar-bg.png');
+    background-color:var(--bg-sidebar);
+}
+
+#sidebar a{
+    background-color: var(--bg-trasparent);
+    color: white;
+    border: 0;
 }
 
 .bg-container {
@@ -93,7 +104,6 @@ nav .fa-question{
     .offcanvas {
         --bs-offcanvas-width: 600px;
     }
-    
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -112,6 +122,13 @@ nav .fa-question{
     .sm-logo{
         display: none;
     }
+    #sidebar .list-group-item{
+        padding: 0.5rem 0.5rem 0.5rem 0;
+       
+    }
+   
+    
+
     
 }
 
