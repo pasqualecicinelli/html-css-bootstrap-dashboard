@@ -18,6 +18,8 @@
 
 <body>
 
+    <div class="wrapper">
+
     <!--NAVBAR-->
 
     <nav class="navbar navbar-expand-lg bg-light">
@@ -159,14 +161,14 @@
                         <div class="col-12 col-md-7 col-xl-4 order-md-1">
                             <div class="d-flex">
                                 <h2 class="text-white m-2">Boolean</h2>
-                                <button class="btn btn-primary rounded-pill m-3">Piano blaze</button>
+                                <button class="btn btn-primary m-3" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Piano blaze</button>
                             </div>
-                            <button class="btn btn-primary m-2 rounded-pill">3 app</button>
+                            <button class="btn btn-primary m-2"style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">3 app</button>
                             <div class="collapse" id="navbarToggleExternalContent">
                                 <div class="d-flex align-items-center">
-                                    <button class="btn btn-primary rounded-pill h4 m-2">Boolean mobile app</button>
-                                    <button class="btn btn-primary rounded-pill h4 m-2">Boolean web app</button>
-                                    <button class="btn btn-primary rounded-pill h4 m-2">Boolean blog app</button>
+                                    <button class="btn btn-primary  h4 m-2" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Boolean mobile app</button>
+                                    <button class="btn btn-primary  h4 m-2" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Boolean web app</button>
+                                    <button class="btn btn-primary  h4 m-2" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Boolean blog app</button>
                                 </div>
                             </div>
                             <nav>
@@ -418,12 +420,14 @@
 
                                     <ul class="list-group border-top-0">
                                         <li class="list-group-item border-0 h5">Utenti attivi</li>
-                                        <li class="list-group-item border-end-0 border-start-0">Lista degli utenti attivi in
+                                        <li class="list-group-item border-end-0 border-start-0">Lista degli utenti
+                                            attivi in
                                             piattaforma nell'ultimo mese</li>
                                         <li class="list-group-item border-end-0 border-start-0 ">Gennaio: 1200</li>
                                         <li class="list-group-item border-end-0 border-start-0">Febbraio: 800</li>
                                         <li class="list-group-item border-end-0 border-start-0">Marzo: 1500</li>
-                                        <li class="list-group-item border-end-0 border-start-0 border-bottom-0"><a href="#">Visualizza report approfondito</a></li>
+                                        <li class="list-group-item border-end-0 border-start-0 border-bottom-0"><a
+                                                href="#">Visualizza report approfondito</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -435,30 +439,31 @@
 
     </main>
 
-
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+</div>
+    <div class="offcanvas offcanvas-end fw-semibold" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
 
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <div class="col-12 d-flex flex-wrap">
-                <div class="input-group-text w-50" id="basic-addon1">Name</div>
-                <div class="input-group-text w-50" id="basic-addon1">Cognome</div>
+                <div class="input-group-text w-100 ps-0" id="basic-addon1">Name</div>
+                <input class="w-100" type="text" class="form-control" aria-label="Name" aria-describedby="basic-addon1">
+
             </div>
 
-            <div class="col-12 d-flex flex-wrap">
-                <div class="input-group mb-3">
+            <div class="col-12 d-flex flex-wrap mb-3">
 
-                    <input class="w-50" type="text" class="form-control w-50" aria-label="Name"
-                        aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group mb-3">
 
-                    <input class="w-50" type="text" class="form-control" aria-label="Cognome"
-                        aria-describedby="basic-addon1">
-                </div>
+                <div class="input-group-text w-100 ps-0" id="basic-addon1">Cognome</div>
+                <input class="w-100" type="text" class="form-control" aria-label="Cognome"
+                    aria-describedby="basic-addon1">
+
+
+
+
             </div>
             <div class="col-12 d-flex flex-wrap">
                 <div class="input-group mb-3">
