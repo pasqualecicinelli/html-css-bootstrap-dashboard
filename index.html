@@ -122,7 +122,7 @@
             <section id="sidebar" class="h-100">
                 <div class="container-fluid h-100">
                     <div class="row h-100 flex-column">
-                        <div class="col h-100">
+                        <div class="col p-0 mt-4 h-100 fw-semibold">
                             <div class="h-100 list-group text-center">
                                 <a class="list-group-item" href="#"><i class="fa-solid fa-house"></i> <span
                                         class="ps-2 d-none d-lg-inline-block">Home</span></a>
@@ -145,10 +145,10 @@
         <div class="d-flex flex-column bg-container">
             <header id="top-container">
                 <div class="container-fluid">
-                    <div class="row justify-content-between">
+                    <div class="row justify-content-between align-items-start pt-3">
 
                         <div class="col-12 col-md-3 col-xl-2  order-md-3 d-flex">
-                            <button class="student btn text-white">Nuovo studente</button>
+                            <button class="student btn text-white fw-semibold py-0">Nuovo studente</button>
                             <button class="student btn text-white rounded border-light" type="button"
                                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                                 aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
@@ -159,7 +159,7 @@
                         <div class="col-12 col-md-7 col-xl-4 order-md-1">
                             <div class="d-flex">
                                 <h2 class="text-white m-2">Boolean</h2>
-                                <button class="btn btn-primary rounded-pill m-2">Piano blaze</button>
+                                <button class="btn btn-primary rounded-pill m-3">Piano blaze</button>
                             </div>
                             <button class="btn btn-primary m-2 rounded-pill">3 app</button>
                             <div class="collapse" id="navbarToggleExternalContent">
@@ -186,7 +186,7 @@
                         </div>
                         <div class="col-12 col-md-2 col-xl-3 order-md-2">
                             <h6 class="text-white m-2">Studenti online negli ultimi 30 minuti</h6>
-                            <h4 class="text-white m-2">125</h4>
+                            <h2 class="text-white m-2">125</h2>
                         </div>
                     </div>
                 </div>
@@ -412,7 +412,20 @@
                                 </div>
                             </div>
                             <div class="card my-4">
-                                <img src="./img/stats.jpeg" alt="">
+                                <div class="card m-3">
+                                    <img src="./img/stats.jpeg" alt="">
+
+
+                                    <ul class="list-group border-top-0">
+                                        <li class="list-group-item border-0 h5">Utenti attivi</li>
+                                        <li class="list-group-item border-end-0 border-start-0">Lista degli utenti attivi in
+                                            piattaforma nell'ultimo mese</li>
+                                        <li class="list-group-item border-end-0 border-start-0 ">Gennaio: 1200</li>
+                                        <li class="list-group-item border-end-0 border-start-0">Febbraio: 800</li>
+                                        <li class="list-group-item border-end-0 border-start-0">Marzo: 1500</li>
+                                        <li class="list-group-item border-end-0 border-start-0 border-bottom-0"><a href="#">Visualizza report approfondito</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

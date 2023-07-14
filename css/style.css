@@ -93,7 +93,6 @@ nav .fa-question {
 
 #top-container .order-md-3:first-child button {
     height: 36px;
-    margin: 0.5rem;
 }
 
 #top-container .btn-primary {
@@ -142,6 +141,13 @@ tr>td {
     margin-bottom: 0;
 }
 
+#middle-container li,
+#middle-container .form-check,
+#middle-container .accordion-item,
+#middle-container .accordion-button {
+    font-weight: 600;
+}
+
 /*--font-awesome*/
 
 /*<i class="fa-solid fa-pen"></i>
@@ -186,7 +192,7 @@ tr>td {
 
     }
 
-    .col-12 .collapse:not(.show) {
+    #top-container .col-12 .collapse:not(.show) {
         display: block;
     }
 
